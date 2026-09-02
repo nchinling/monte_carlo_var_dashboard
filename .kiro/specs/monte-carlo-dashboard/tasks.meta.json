@@ -1,0 +1,258 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Scaffold the package, dependencies, and data models": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327698451
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327710730
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327794774
+      }
+    ],
+    "2.1 Implement `validation.py` functions": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327699697
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327806451
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327970746
+      }
+    ],
+    "3.1 Implement `compute_return_stats` in `simulation.py`": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327699827
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327807836
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327972130
+      }
+    ],
+    "3.4 Implement `run_simulation` in `simulation.py`": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327699898
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327999162
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328111259
+      }
+    ],
+    "4. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327699967
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328117310
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328471984
+      }
+    ],
+    "5.1 Implement `risk.py` functions": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327700044
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327809235
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327973364
+      }
+    ],
+    "6.1 Implement `build_figure` in `visualization.py`": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327700112
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327810784
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327975188
+      }
+    ],
+    "7.1 Implement `fetch_prices` in `data_service.py`": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327700194
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327812006
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327976263
+      }
+    ],
+    "8. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327700261
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328477649
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328607569
+      }
+    ],
+    "9.1 Build the Streamlit widgets and input collection": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327700346
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328612869
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328708376
+      }
+    ],
+    "9.2 Wire the run pipeline and result display": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327700406
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328713698
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328897610
+      }
+    ],
+    "10. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327700474
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328902939
+      },
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788329609960
+      }
+    ],
+    "1. Set up project structure, dependencies, and shared data models": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327794846
+      }
+    ],
+    "2. Implement input validation (Dashboard support)": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327970843
+      }
+    ],
+    "5. Implement the Risk_Calculator": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327973428
+      }
+    ],
+    "6. Implement the Visualizer": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327975282
+      }
+    ],
+    "7. Implement the Data_Service": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788327976332
+      }
+    ],
+    "3. Implement the Simulation_Engine": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328111360
+      }
+    ],
+    "9. Implement and wire the Dashboard (`app.py`)": [
+      {
+        "executionId": "cc2341c2-0916-431b-b0ca-4d1fbc257594",
+        "chatSessionId": "sess_f55c88c2-182d-4ae7-9c8e-72ca97d87a51",
+        "timestamp": 1788328897775
+      }
+    ]
+  }
+}
