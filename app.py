@@ -13,6 +13,8 @@ added inside the ``if run_clicked:`` block below.
 
 from __future__ import annotations
 
+import base64
+import io
 import os
 import sys
 from datetime import date, timedelta
@@ -58,6 +60,7 @@ def send_report_to_n8n(
     value_at_risk: float,
     drift: float,
     volatility: float,
+    fig=None,
 ) -> bool:
     """Send a successful dashboard run to the n8n webhook for Telegram/email delivery."""
     webhook_url = None
@@ -68,6 +71,12 @@ def send_report_to_n8n(
 
     if not webhook_url:
         return False
+
+    image_base64 = None
+    if fig is not None:
+        buffer = io.BytesIO()
+        fig.savefig(buffer, format="png", bbox_inches="tight")
+        image_base64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
     payload = {
         "ticker": ticker,
@@ -84,6 +93,8 @@ def send_report_to_n8n(
             f"Worst-case price: ${worst_case_price:,.2f} | "
             f"Value at Risk: ${value_at_risk:,.2f}"
         ),
+        "chart_png_base64": image_base64,
+        "chart_png_mime": "image/png",
     }
 
     try:
@@ -264,6 +275,7 @@ def main() -> None:
             value_at_risk=risk.value_at_risk,
             drift=stats.drift,
             volatility=stats.volatility,
+            fig=fig,
         )
 
 
