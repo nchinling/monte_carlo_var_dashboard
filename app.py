@@ -17,6 +17,7 @@ import os
 import sys
 from datetime import date, timedelta
 
+import requests
 import streamlit as st
 
 # The package lives under ``src/`` so that computation stays isolated from the
@@ -46,6 +47,54 @@ from monte_carlo_dashboard.visualization import build_figure  # noqa: E402
 # Number of future trading days to simulate; matches the SimulationResult
 # grid contract (price_paths has shape (HORIZON, simulation_count)).
 HORIZON = 30
+
+
+def send_report_to_n8n(
+    ticker: str,
+    simulation_count: int,
+    var_percentile: float,
+    last_price: float,
+    worst_case_price: float,
+    value_at_risk: float,
+    drift: float,
+    volatility: float,
+) -> bool:
+    """Send a successful dashboard run to the n8n webhook for Telegram/email delivery."""
+    webhook_url = None
+    try:
+        webhook_url = st.secrets["N8N_WEBHOOK_URL"]
+    except Exception:  # pragma: no cover - secrets are environment-specific
+        webhook_url = os.getenv("N8N_WEBHOOK_URL")
+
+    if not webhook_url:
+        return False
+
+    payload = {
+        "ticker": ticker,
+        "simulation_count": simulation_count,
+        "var_percentile": var_percentile,
+        "last_price": float(last_price),
+        "worst_case_price": float(worst_case_price),
+        "value_at_risk": float(value_at_risk),
+        "drift": float(drift),
+        "volatility": float(volatility),
+        "report": (
+            f"Ticker: {ticker} | Simulations: {simulation_count} | "
+            f"VaR percentile: {var_percentile} | Last price: ${last_price:,.2f} | "
+            f"Worst-case price: ${worst_case_price:,.2f} | "
+            f"Value at Risk: ${value_at_risk:,.2f}"
+        ),
+    }
+
+    try:
+        response = requests.post(webhook_url, json=payload, timeout=20)
+        response.raise_for_status()
+    except requests.RequestException as exc:  # pragma: no cover - network-specific
+        st.warning(f"Report delivery to n8n failed: {exc}")
+        return False
+
+    st.success("Report sent to Telegram and email.")
+    return True
 
 
 def collect_inputs() -> dict:
@@ -202,6 +251,20 @@ def main() -> None:
 
         # Requirement 9.1: render the simulated price paths and VaR line.
         st.pyplot(fig)
+
+        # If configured, forward the successful run to n8n so Telegram/email
+        # delivery happens from the workflow instead of embedding credentials in
+        # the app itself.
+        send_report_to_n8n(
+            ticker=ticker,
+            simulation_count=inputs["simulation_count"],
+            var_percentile=inputs["var_percentile"],
+            last_price=risk.last_price,
+            worst_case_price=risk.worst_case_price,
+            value_at_risk=risk.value_at_risk,
+            drift=stats.drift,
+            volatility=stats.volatility,
+        )
 
 
 if __name__ == "__main__":

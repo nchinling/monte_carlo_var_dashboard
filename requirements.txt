@@ -3,5 +3,6 @@ pandas
 matplotlib
 yfinance
 streamlit
+requests
 hypothesis
 pytest
