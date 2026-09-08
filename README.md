@@ -4,6 +4,10 @@ A Streamlit dashboard for exploring simulated stock-price paths and estimating d
 
 The app downloads historical adjusted closing prices from Yahoo Finance, estimates daily return statistics, and uses a Geometric Brownian Motion (GBM) Monte Carlo simulation to project 30 future trading days.
 
+## Live Demo
+
+Try the hosted app: [Monte Carlo Simulation Dashboard](https://monte-carlo-dashboard-ngcl.streamlit.app/)
+
 ## Features
 
 - Enter a stock ticker, historical date range, and number of simulation paths.
