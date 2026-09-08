@@ -64,7 +64,8 @@ def collect_inputs() -> dict:
     # Requirement 2.1 / 2.2 / 2.4: start and end date inputs, with the end
     # date capped at today so a future end date cannot be selected.
     default_start = today - timedelta(days=365)
-    start_date = st.date_input("Start date", value=default_start, max_value=today)
+    start_date = st.date_input(
+        "Start date", value=default_start, max_value=today)
     end_date = st.date_input("End date", value=today, max_value=today)
 
     # Requirement 3.1 / 3.2 / 3.3 / 3.5: integer simulation count, default
@@ -178,6 +179,7 @@ def main() -> None:
                 ticker,
                 inputs["simulation_count"],
                 HORIZON,
+                inputs["var_percentile"],
             )
 
         # Requirement 10.3: display statistics, risk metrics, and the chart

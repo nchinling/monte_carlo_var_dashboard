@@ -23,6 +23,7 @@ def build_figure(
     ticker: str,
     simulation_count: int,
     horizon: int,
+    var_percentile: float = 5,
 ) -> Figure:
     """Build the price-path chart with the VaR threshold line.
 
@@ -32,6 +33,8 @@ def build_figure(
         ticker: Ticker symbol shown in the chart title.
         simulation_count: Number of simulated paths, shown in the title.
         horizon: Number of future trading days, shown in the title.
+        var_percentile: Percentile used to calculate the VaR threshold, shown
+            in the legend.
 
     Returns:
         A ``matplotlib.figure.Figure`` containing the plotted paths, the VaR
@@ -51,7 +54,7 @@ def build_figure(
         color="red",
         linestyle="--",
         linewidth=2,
-        label="VaR Confidence Threshold",
+        label=f"VaR Threshold (P{var_percentile:g})",
     )
 
     # Req 9.3: title includes the ticker, simulation count, and horizon.
